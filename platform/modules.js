@@ -22,3 +22,8 @@ exports.getRepository = function() {
 	var repository = require("platform/v4/repository");
 	return repository;
 };
+
+exports.getWorkspace = function() {
+	var workspace = require("platform/v4/workspace");
+	return workspace;
+};
