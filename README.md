@@ -1,12 +1,19 @@
-# API - platform
+# API - Platform
 
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/api-platform.svg)](https://github.com/dirigiblelabs/api-platform/graphs/contributors)
 
 ## Overview
 
-* [Lifecycle](http://www.dirigible.io/api/lifecycle.html) 
+* [Lifecycle](http://www.dirigible.io/api/platform_lifecycle.html) 
   - provides a **Lifecycle API**, which is used to used for publish/unpublish projects programmatically
+* [Registry](http://www.dirigible.io/api/platform_registry.html) 
+  - provides a **Registry API**, which is used to retrieve content from the registry, including the pre-delivered JAR files
+* [Repository](http://www.dirigible.io/api/platform_repository.html) 
+  - provides a **Repository API**, which is used to manage the repository content
+* [Workspace](http://www.dirigible.io/api/platform_workspace.html) 
+  - provides a **Workspace API**, which is used to manage the workspace content
+
 
 ## License
 
