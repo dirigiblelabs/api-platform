@@ -8,15 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getContent = function() {
-	return [{
-		name: "platform/v4/lifecycle",
-		description: "Lifecycle API"
-	}, {
-		name: "platform/v4/registry",
-		description: "Registry API"
-	}, {
-		name: "platform/v4/repository",
-		description: "Repository API"
-	}];
-};
+var repository = require("platform/v4/repository");
+for (var propertyName in repository) {
+	exports[propertyName] = repository[propertyName];
+}

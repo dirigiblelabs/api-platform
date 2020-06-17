@@ -8,15 +8,14 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-exports.getContent = function() {
-	return [{
-		name: "platform/v4/lifecycle",
-		description: "Lifecycle API"
-	}, {
-		name: "platform/v4/registry",
-		description: "Registry API"
-	}, {
-		name: "platform/v4/repository",
-		description: "Repository API"
-	}];
+
+var bytes = require("io/v4/bytes");
+
+exports.getContent = function(path) {
+	var nativeContent = org.eclipse.dirigible.api.v3.repository.ContentFacade.getContent(path);
+	return bytes.toJavaScriptBytes(nativeContent);
+};
+
+exports.getText = function(path) {
+	return org.eclipse.dirigible.api.v3.repository.ContentFacade.getText(path);
 };

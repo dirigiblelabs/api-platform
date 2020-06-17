@@ -12,3 +12,13 @@ exports.getLifecycle = function() {
 	var lifecycle = require("platform/v4/lifecycle");
 	return lifecycle;
 };
+
+exports.getRegistry = function() {
+	var registry = require("platform/v4/registry");
+	return registry;
+};
+
+exports.getRepository = function() {
+	var repository = require("platform/v4/repository");
+	return repository;
+};
