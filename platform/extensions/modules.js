@@ -21,5 +21,11 @@ exports.getContent = function() {
 	}, {
 		name: "platform/v4/workspace",
 		description: "Workspace API"
+	}, {
+		name: "platform/v4/engines",
+		description: "Engines API"
+	}, {
+		name: "platform/v4/template-engine",
+		description: "Template Engine API"
 	}];
 };

@@ -27,3 +27,13 @@ exports.getWorkspace = function() {
 	var workspace = require("platform/v4/workspace");
 	return workspace;
 };
+
+exports.getEngines = function() {
+	var engines = require("platform/v4/engines");
+	return engines;
+};
+
+exports.getTemplateEngine = function() {
+	var templateEngine = require("platform/v4/template-engine");
+	return templateEngine;
+};
