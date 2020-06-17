@@ -13,6 +13,10 @@
   - provides a **Repository API**, which is used to manage the repository content
 * [Workspace](http://www.dirigible.io/api/platform_workspace.html) 
   - provides a **Workspace API**, which is used to manage the workspace content
+* [Engines](http://www.dirigible.io/api/platform_engines.html) 
+  - provides a **Engines API**, which is used to execute a scripting service programmatically
+* [Template Engine](http://www.dirigible.io/api/platform_template_engine.html) 
+  - provides a **Template Engine API**, which is used to process templates
 
 
 ## License
