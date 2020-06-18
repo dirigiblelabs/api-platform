@@ -33,7 +33,7 @@ exports.getEngines = function() {
 	return engines;
 };
 
-exports.getTemplateEngine = function() {
-	var templateEngine = require("platform/v4/template-engine");
-	return templateEngine;
+exports.getTemplateEngines = function() {
+	var templateEngines = require("platform/v4/template-engines");
+	return templateEngines;
 };
