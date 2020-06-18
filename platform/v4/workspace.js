@@ -10,21 +10,21 @@
  */
 
 exports.createWorkspace = function(name) {
-	var native = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.createWorkspace(name);
+	var native = org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.createWorkspace(name);
 	var workspace = new Workspace();
 	workspace.native = native;
 	return workspace;
 };
 
 exports.getWorkspace = function(name) {
-	var native = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.getWorkspace(name);
+	var native = org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.getWorkspace(name);
 	var workspace = new Workspace();
 	workspace.native = native;
 	return workspace;
 };
 
 exports.getWorkspacesNames = function() {
-	var workspacesNames = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.getWorkspacesNames();
+	var workspacesNames = org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.getWorkspacesNames();
 	if (workspacesNames) {
 		return JSON.parse(workspacesNames);
 	}
@@ -32,7 +32,7 @@ exports.getWorkspacesNames = function() {
 };
 
 exports.deleteWorkspace = function(name) {
-	org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.deleteWorkspace(name);
+	org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.deleteWorkspace(name);
 };
 
 /**
@@ -332,7 +332,7 @@ function File() {
 	};
 	
 	this.getContent = function() {
-		var output = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.getContent(this.native);
+		var output = org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.getContent(this.native);
 		if (output && output !== null) {
 			output;
 		}
@@ -340,7 +340,7 @@ function File() {
 	};
 	
 	this.setContent = function(input) {
-		var output = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.setContent(this.native, input);
+		var output = org.eclipse.dirigible.api.v3.platform.WorkspaceFacade.setContent(this.native, input);
 		return output;
 	};
 
