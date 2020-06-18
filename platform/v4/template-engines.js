@@ -25,12 +25,12 @@ exports.getDefaultEngine = function() {
 };
 
 exports.getMustacheEngine = function() {
-	var engine = org.eclipse.dirigible.api.v3.core.TemplateEngineFacade.getMustacheEngine();
+	var engine = org.eclipse.dirigible.api.v3.platform.TemplateEnginesFacade.getMustacheEngine();
 	return new TemplateEngine(engine, "mustache");
 };
 
 exports.getVelocityEngine = function() {
-	var engine = org.eclipse.dirigible.api.v3.core.TemplateEngineFacade.getVelocityEngine();
+	var engine = org.eclipse.dirigible.api.v3.platform.TemplateEnginesFacade.getVelocityEngine();
 	return new TemplateEngine(engine, "velocity");
 };
 
