@@ -12,10 +12,10 @@
 var bytes = require("io/v4/bytes");
 
 exports.getContent = function(path) {
-	var nativeContent = org.eclipse.dirigible.api.v3.repository.ContentFacade.getContent(path);
+	var nativeContent = org.eclipse.dirigible.api.v3.platform.RegistryFacade.getContent(path);
 	return bytes.toJavaScriptBytes(nativeContent);
 };
 
 exports.getText = function(path) {
-	return org.eclipse.dirigible.api.v3.repository.ContentFacade.getText(path);
+	return org.eclipse.dirigible.api.v3.platform.RegistryFacade.getText(path);
 };
