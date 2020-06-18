@@ -12,46 +12,46 @@
 var bytes = require("io/v4/bytes");
 
 exports.getResource = function(path) {
-	var resourceInstance = org.eclipse.dirigible.api.v3.repository.RepositoryFacade.getResource(path);
+	var resourceInstance = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.getResource(path);
 	var resource = new Resource();
 	resource.native = resourceInstance;
 	return resource;
 };
 
 exports.createResource = function(path, content, contentType) {
-	var resourceInstance = org.eclipse.dirigible.api.v3.repository.RepositoryFacade.createResource(path, content, contentType);
+	var resourceInstance = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.createResource(path, content, contentType);
 	var resource = new Resource();
 	resource.native = resourceInstance;
 	return resource;
 };
 
 exports.updateResource = function(path, content) {
-	var resourceInstance = org.eclipse.dirigible.api.v3.repository.RepositoryFacade.updateResource(path, content);
+	var resourceInstance = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.updateResource(path, content);
 	var resource = new Resource();
 	resource.native = resourceInstance;
 	return resource;	
 };
 
 exports.deleteResource = function(path) {
-	org.eclipse.dirigible.api.v3.repository.RepositoryFacade.deleteResource(path);
+	org.eclipse.dirigible.api.v3.platform.RepositoryFacade.deleteResource(path);
 };
 
 exports.getCollection = function(path) {
-	var collectionInstnace = org.eclipse.dirigible.api.v3.repository.RepositoryFacade.getCollection(path);
+	var collectionInstnace = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.getCollection(path);
 	var collection = new Collection();
 	collection.native = collectionInstnace;
 	return collection;
 };
 
 exports.createCollection = function(path) {
-	var collectionInstnace = org.eclipse.dirigible.api.v3.repository.RepositoryFacade.createCollection(path);
+	var collectionInstnace = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.createCollection(path);
 	var collection = new Collection();
 	collection.native = collectionInstnace;
 	return collection;
 };
 
 exports.deleteCollection = function(path) {
-	org.eclipse.dirigible.api.v3.repository.RepositoryFacade.deleteCollection(path);
+	org.eclipse.dirigible.api.v3.platform.RepositoryFacade.deleteCollection(path);
 };
 
 function Resource() {
