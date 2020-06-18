@@ -25,7 +25,7 @@ exports.getContent = function() {
 		name: "platform/v4/engines",
 		description: "Engines API"
 	}, {
-		name: "platform/v4/template-engine",
-		description: "Template Engine API"
+		name: "platform/v4/template-engines",
+		description: "Template Engines API"
 	}];
 };
