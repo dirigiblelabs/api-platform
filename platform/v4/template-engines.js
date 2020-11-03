@@ -34,6 +34,11 @@ exports.getVelocityEngine = function() {
 	return new TemplateEngine(engine, "velocity");
 };
 
+exports.getJavascriptEngine = function() {
+	var engine = org.eclipse.dirigible.api.v3.platform.TemplateEnginesFacade.getJavascriptEngine();
+	return new TemplateEngine(engine, "javascript");
+};
+
 exports.generate = function(template, parameters) {
 	return exports.getDefaultEngine().generate(template, parameters);
 };
