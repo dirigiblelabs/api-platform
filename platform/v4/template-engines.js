@@ -55,11 +55,12 @@ exports.generateFromFile = function(location, parameters) {
 };
 
 function TemplateEngine(engine, type) {
+	this.engine = engine;
 	this.sm = type === "mustache" ? "{{" : null;
 	this.em = type === "mustache" ? "}}" : null;
 
 	this.generate = function(template, parameters) {
-		return engine.generate(template, JSON.stringify(parameters), this.sm, this.em);
+		return this.engine.generate(template, JSON.stringify(parameters), this.sm, this.em);
 	};
 
 	this.setSm = function(sm) {
