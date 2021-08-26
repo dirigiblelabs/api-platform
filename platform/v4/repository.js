@@ -36,14 +36,14 @@ exports.updateResource = function(path, content) {
 	var resourceInstance = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.updateResource(path, content);
 	var resource = new Resource();
 	resource.native = resourceInstance;
-	return resource;	
+	return resource;
 };
 
 exports.updateResourceNative = function(path, content) {
 	var resourceInstance = org.eclipse.dirigible.api.v3.platform.RepositoryFacade.updateResourceNative(path, content);
 	var resource = new Resource();
 	resource.native = resourceInstance;
-	return resource;	
+	return resource;
 };
 
 exports.deleteResource = function(path) {
