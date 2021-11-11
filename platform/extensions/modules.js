@@ -8,8 +8,8 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-var platform = require("platform/v4/registry")
+let platform = require("platform/v4/registry")
 exports.getContent = function () {
-	var file = platform.getText("platform/extensions/modules.json");
+	let file = platform.getText("platform/extensions/modules.json");
 	return JSON.parse(file);
 };
