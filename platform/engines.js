@@ -8,7 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-let engines = require("platform/v4/engines");
-for (var propertyName in engines) {
+const engines = require("platform/v4/engines");
+for (const propertyName in engines) {
 	exports[propertyName] = engines[propertyName];
 }

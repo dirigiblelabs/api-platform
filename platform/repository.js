@@ -8,7 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-var repository = require("platform/v4/repository");
-for (var propertyName in repository) {
+const repository = require("platform/v4/repository");
+for (const propertyName in repository) {
 	exports[propertyName] = repository[propertyName];
 }

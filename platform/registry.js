@@ -8,7 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-var registry = require("platform/v4/registry");
-for (var propertyName in registry) {
+const registry = require("platform/v4/registry");
+for (const propertyName in registry) {
 	exports[propertyName] = registry[propertyName];
 }

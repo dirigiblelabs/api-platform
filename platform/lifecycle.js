@@ -8,7 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-var lifecycle = require("platform/v4/lifecycle");
-for (var propertyName in lifecycle) {
+const lifecycle = require("platform/v4/lifecycle");
+for (const propertyName in lifecycle) {
 	exports[propertyName] = lifecycle[propertyName];
 }

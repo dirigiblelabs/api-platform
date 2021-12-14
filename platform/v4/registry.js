@@ -9,10 +9,10 @@
  *   SAP - initial API and implementation
  */
 
-var bytes = require("io/v4/bytes");
+const bytes = require("io/v4/bytes");
 
 exports.getContent = function(path) {
-	var nativeContent = org.eclipse.dirigible.api.v3.platform.RegistryFacade.getContent(path);
+	const nativeContent = org.eclipse.dirigible.api.v3.platform.RegistryFacade.getContent(path);
 	return bytes.toJavaScriptBytes(nativeContent);
 };
 

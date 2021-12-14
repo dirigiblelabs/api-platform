@@ -8,7 +8,7 @@
  * Contributors:
  *   SAP - initial API and implementation
  */
-var workspace = require("platform/v4/workspace");
-for (var propertyName in workspace) {
+const workspace = require("platform/v4/workspace");
+for (const propertyName in workspace) {
 	exports[propertyName] = workspace[propertyName];
 }
